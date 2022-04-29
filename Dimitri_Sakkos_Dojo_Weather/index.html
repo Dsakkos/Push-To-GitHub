@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- DojoWeather Navbar -->
+		<nav class="navbar">
+			<div class="top">
+				<h1 class="logo">DojoWeather</h1>
+				<ul class="topbuttons">
+					<button class="burbank-btn" onclick="alert('Loading weather report...')">Burbank</button>
+					<button class="chicago-btn">Chicago</button>
+					<button class="dallas-btn">Dallas</button>
+				</ul>
+			</div>
+		</nav>
+		<div class="container">
+			<!-- Bottom Header Bar -->
+			<div class="header">
+				<div class="sanjose">
+					<header>SanJose</header>
+					<p>
+						show temperature in
+						<select name="tempdropdown" id="dropdown">
+							<option>°C</option>
+							<option>°F</option>
+						</select>
+					</p>
+					<!-- Bottom Divider Bar -->
+					<div class="bottombar"></div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- First Column Today -->
+				<div class="first-col">
+					<p class="title">Today</p>
+					<img class="somerain-img" src="./assets/some_rain.png" alt="some_rain" />
+					<p>some rain</p>
+					<div class="temps">
+						<p class="hightemp">24°</p>
+						<p class="lowtemp">18°</p>
+					</div>
+				</div>
+				<!-- Second Column Tomorrow -->
+				<div class="second-col">
+					<p class="title">Tomorrow</p>
+					<img class="somesun-img" src="./assets/some_sun.png" alt="some_sun" />
+					<p>some sun</p>
+					<div class="temps">
+						<p class="hightemp">27°</p>
+						<p class="lowtemp">19°</p>
+					</div>
+				</div>
+				<!-- Third Column Friday -->
+				<div class="third-col">
+					<p class="title">Friday</p>
+					<img class="someclouds-img" src="./assets/some_clouds.png" alt="some_clouds" />
+					<p>some clouds</p>
+					<div class="temps">
+						<p class="hightemp">21°</p>
+						<p class="lowtemp">16°</p>
+					</div>
+				</div>
+				<!-- Forth Column Saturday -->
+				<div class="forth-col">
+					<p class="title">Saturday</p>
+					<img class="somesun-img" src="./assets/some_sun.png" alt="some_sun" />
+					<p>some sun</p>
+					<div class="temps">
+						<p class="hightemp">26°</p>
+						<p class="lowtemp">21°</p>
+					</div>
+				</div>
+			</div>
+			<div onclick="hide(this)" class="cookiebar">
+				<div class="cookietime">
+					<img class="cookie-img" src="./assets/cookie.png" alt="cookie" />
+					<p class="cookietimetitle">Stop! Cookie time</p>
+					<p class="cookiestatement">We use cookies (sadly not the edible ones) to personalize</p>
+					<p class="cookiestatement">content and ads, to provide social media features and to</p>
+					<p class="cookiestatement">analyse our traffic. <a href="#">Read more....</a></p>
+				</div>
+				<button class="accept-btn">I Accept</button>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

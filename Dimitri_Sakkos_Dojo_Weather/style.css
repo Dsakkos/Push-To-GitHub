@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+.navbar button {
+	background: none;
+	background-color: none;
+	border: none;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	font-family: sans-serif;
+}
+
+.container,
+.navbar {
+	width: 1200px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+
+.row {
+	display: flex;
+}
+
+/* Top Navbar Styling */
+.top {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
